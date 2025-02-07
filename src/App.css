@@ -1,0 +1,44 @@
+/* Fixed Header at the top */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 1000; /* Ensure the header stays above other content */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Adds subtle shadow */
+    padding: 10px 20px; /* Adjust header padding as necessary */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Adding padding to the main content to avoid overlap with the fixed header */
+  .main-content {
+    padding-top: 80px; /* Adjust this value based on the height of your header */
+  }
+  
+  /* Optional: Style for the navigation links */
+  .nav-links {
+    display: flex;
+    gap: 15px;
+  }
+  
+  /* Make the NavLinks visually distinct when hovered or active */
+  .nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: normal;
+    padding: 5px 10px;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    color: #f97316; /* Orange color on hover */
+  }
+  
+  .nav-links a.active {
+    color: #f97316; /* Active link color */
+  }
+  
